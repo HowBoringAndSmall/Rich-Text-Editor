@@ -1,0 +1,10 @@
+﻿@page "/gettext"
+
+<h3>GetText</h3>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+    }
+}
